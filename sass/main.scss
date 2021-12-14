@@ -1,0 +1,117 @@
+@import "./variables";
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: $bodyBg;
+
+    main {
+        display: flex;
+        justify-content: space-between;
+        height: 100vh;
+        flex-direction: column;
+
+        div {
+            // margin: 10px;
+
+            section {
+                width: 100px;
+                height: 100px;
+                box-shadow: 3px 3px 9px 0px #a3a3a3;
+                border-radius: $borderRadius;
+
+
+            }
+        }
+
+        .div1 {
+            .sec1 {
+                margin-left: 0%;
+                animation: animation1 $Dive1Sec1 alternate infinite;
+            }
+
+            .sec2 {
+                margin-top: -100px;
+                margin-left: calc(100% - 100px);
+                animation: animation2 $Dive1Sec2 alternate infinite;
+            }
+        }
+
+        .div2 {
+            .sec1 {
+                animation: animation1 $Dive2Sec1 alternate infinite;
+            }
+
+            .sec2 {
+                margin-top: -100px;
+                margin-left: calc(100% - 100px);
+                animation: animation2 $Dive2Sec2 alternate infinite;
+            }
+        }
+
+        .div3 {
+            .sec1 {
+                margin-left: 0%;
+                animation: animation1 $Dive3Sec1 alternate infinite;
+            }
+
+            .sec2 {
+                margin-top: -100px;
+                margin-left: calc(100% - 100px);
+                animation: animation2 $Dive3Sec2 alternate infinite;
+            }
+        }
+
+        .div4 {
+            .sec1 {
+                animation: animation1 $Dive4Sec1 alternate infinite;
+            }
+
+            .sec2 {
+                margin-top: -100px;
+                margin-left: calc(100% - 100px);
+                animation: animation2 $Dive4Sec2 alternate infinite;
+            }
+        }
+
+
+
+        //! animation
+
+        @keyframes animation1 {
+            from {
+                margin-left: 0%;
+                background: $animationBG1;
+                -webkit-filter: hue-rotate(0deg);
+            }
+
+            to {
+                margin-left: calc(100% - 100px);
+                background: $animationBG2;
+                -webkit-filter: hue-rotate(360deg);
+            }
+        }
+
+
+        @keyframes animation2 {
+            from {
+                margin-left: calc(100% - 100px);
+                background: $animationBG2;
+                -webkit-filter: hue-rotate(0deg);
+            }
+
+            to {
+                margin-left: 0%;
+                background: $animationBG1;
+                -webkit-filter: hue-rotate(360deg);
+            }
+        }
+    }
+
+}

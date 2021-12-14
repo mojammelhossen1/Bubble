@@ -1,0 +1,83 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: #e7e7e7;
+}
+body main {
+  display: flex;
+  justify-content: space-between;
+  height: 100vh;
+  flex-direction: column;
+}
+body main div section {
+  width: 100px;
+  height: 100px;
+  box-shadow: 3px 3px 9px 0px #a3a3a3;
+  border-radius: 50%;
+}
+body main .div1 .sec1 {
+  margin-left: 0%;
+  animation: animation1 linear 2.1s alternate infinite;
+}
+body main .div1 .sec2 {
+  margin-top: -100px;
+  margin-left: calc(100% - 100px);
+  animation: animation2 linear 2.6s alternate infinite;
+}
+body main .div2 .sec1 {
+  animation: animation1 linear 2.6s alternate infinite;
+}
+body main .div2 .sec2 {
+  margin-top: -100px;
+  margin-left: calc(100% - 100px);
+  animation: animation2 linear 2.1s alternate infinite;
+}
+body main .div3 .sec1 {
+  margin-left: 0%;
+  animation: animation1 linear 2.1s alternate infinite;
+}
+body main .div3 .sec2 {
+  margin-top: -100px;
+  margin-left: calc(100% - 100px);
+  animation: animation2 linear 2.6s alternate infinite;
+}
+body main .div4 .sec1 {
+  animation: animation1 linear 2.6s alternate infinite;
+}
+body main .div4 .sec2 {
+  margin-top: -100px;
+  margin-left: calc(100% - 100px);
+  animation: animation2 linear 2.1s alternate infinite;
+}
+@keyframes animation1 {
+  from {
+    margin-left: 0%;
+    background: linear-gradient(142deg, rgba(252, 70, 106, 0.541) 100%, rgba(63, 94, 251, 0.486) 0%);
+    -webkit-filter: hue-rotate(0deg);
+  }
+  to {
+    margin-left: calc(100% - 100px);
+    background: linear-gradient(142deg, rgba(63, 94, 251, 0.486) 0%, rgba(252, 70, 106, 0.541) 100%);
+    -webkit-filter: hue-rotate(360deg);
+  }
+}
+@keyframes animation2 {
+  from {
+    margin-left: calc(100% - 100px);
+    background: linear-gradient(142deg, rgba(63, 94, 251, 0.486) 0%, rgba(252, 70, 106, 0.541) 100%);
+    -webkit-filter: hue-rotate(0deg);
+  }
+  to {
+    margin-left: 0%;
+    background: linear-gradient(142deg, rgba(252, 70, 106, 0.541) 100%, rgba(63, 94, 251, 0.486) 0%);
+    -webkit-filter: hue-rotate(360deg);
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

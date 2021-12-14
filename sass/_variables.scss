@@ -1,0 +1,38 @@
+//!timing function
+$animationTime1:2.1s;
+$animationTime2:2.6s;
+
+$timingFunction:linear;
+
+//*timing function individually
+$Dive1Sec1:$timingFunction $animationTime1;
+$Dive1Sec2:$timingFunction $animationTime2;
+$Dive2Sec1:$timingFunction $animationTime2;
+$Dive2Sec2:$timingFunction $animationTime1;
+$Dive3Sec1:$timingFunction $animationTime1;
+$Dive3Sec2:$timingFunction $animationTime2;
+$Dive4Sec1:$timingFunction $animationTime2;
+$Dive4Sec2:$timingFunction $animationTime1;
+
+
+
+//! body background color 
+$bodyBg: rgb(231, 231, 231);
+
+
+
+//! animation color selector
+
+$animationBgSelector1: rgba(252, 70, 106, 0.541) 100%;
+$animationBgSelector2:rgba(63, 94, 251, 0.486) 0%;
+
+
+
+
+//! animation color gradient
+$animationBG1:linear-gradient(142deg, $animationBgSelector1, $animationBgSelector2);
+$animationBG2:linear-gradient(142deg, $animationBgSelector2, $animationBgSelector1);
+
+
+
+$borderRadius:50%;
